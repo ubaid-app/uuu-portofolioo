@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Muhammad Ubaidillah Abrorul Munir</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons for professional icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Menggunakan font Poppins sebagai font utama */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Style untuk garis bawah animasi pada navigasi */
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #4f46e5; /* Indigo-600 */
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-indigo-600">Portofolio</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#hero" class="text-slate-600 hover:text-indigo-600 nav-link">Beranda</a>
+                <a href="#about" class="text-slate-600 hover:text-indigo-600 nav-link">Tentang Saya</a>
+                <a href="#experience" class="text-slate-600 hover:text-indigo-600 nav-link">Pengalaman</a>
+                <a href="#portfolio" class="text-slate-600 hover:text-indigo-600 nav-link">Portofolio</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors">Hubungi Saya</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#hero" class="block py-2 text-slate-600 hover:text-indigo-600">Beranda</a>
+            <a href="#about" class="block py-2 text-slate-600 hover:text-indigo-600">Tentang Saya</a>
+            <a href="#experience" class="block py-2 text-slate-600 hover:text-indigo-600">Pengalaman</a>
+            <a href="#portfolio" class="block py-2 text-slate-600 hover:text-indigo-600">Portofolio</a>
+            <a href="#contact" class="block mt-2 bg-indigo-600 text-white px-4 py-2 rounded-md text-center">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 md:py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <span class="text-indigo-600 font-semibold">Fotografer, Videografer & Komunikator Visual</span>
+                    <h1 class="text-4xl md:text-5xl font-bold my-4 leading-tight">Muhammad Ubaidillah Abrorul Munir</h1>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Mengubah momen berharga menjadi kenangan abadi dan menerjemahkan ide menjadi visual yang memukau. Saya membantu individu dan brand menceritakan kisah mereka melalui lensa kamera dan sentuhan desain yang kreatif.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#portfolio" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl">Lihat Portofolio</a>
+                        <a href="#contact" class="bg-white text-slate-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-all duration-300 border border-slate-300">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <!-- Placeholder untuk foto profil -->
+                    <div class="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-indigo-200 to-sky-200 shadow-2xl flex items-center justify-center overflow-hidden">
+                         <img src="images/profile.jpeg" alt="Foto Profil Muhammad Ubaidillah" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Halo, Saya Ubay.</h2>
+                <p class="text-slate-600 mt-2 max-w-2xl mx-auto">Sebuah pengantar singkat tentang latar belakang dan semangat saya di dunia kreatif.</p>
+            </div>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                <p class="text-slate-600 leading-relaxed text-justify">
+                    Saya adalah seorang mahasiswa Komunikasi dan Penyiaran Islam di UIN Syekh Wasil Kediri dengan hasrat mendalam di dunia visual—fotografi, videografi, dan desain grafis. Bagi saya, visual bukan sekadar gambar, melainkan sebuah bahasa universal untuk menyampaikan pesan dan emosi.
+                    <br><br>
+                    Passion ini telah membawa saya menjuarai berbagai kompetisi di bidang kreatif dan memberikan saya kesempatan untuk berbagi ilmu sebagai instruktur desain grafis serta pembina kegiatan kepramukaan. Pengalaman ini mengasah kemampuan saya tidak hanya dalam teknis, tetapi juga dalam kepemimpinan, komunikasi tim, dan manajemen proyek.
+                    <br><br>
+                    Saat ini, saya aktif sebagai fotografer dan videografer freelance, berfokus pada momen-momen spesial seperti pernikahan, lamaran, wisuda, dan berbagai acara lainnya. Misi saya adalah memberikan hasil karya yang tidak hanya berkualitas tinggi, tetapi juga mampu menangkap esensi dan cerita unik dari setiap klien.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Perjalanan Profesional & Pengalaman</h2>
+                <p class="text-slate-600 mt-2">Jejak langkah saya dalam dunia profesional dan organisasi.</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative border-l-2 border-indigo-200 pl-10">
+                    <!-- Experience Item 1 -->
+                    <div class="mb-10">
+                        <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-slate-500">2024 - Sekarang</p>
+                        <h3 class="text-xl font-semibold text-indigo-700 mt-1">Fotografer & Videografer Freelance</h3>
+                        <p class="text-slate-600 font-medium">Klien Individu & Event</p>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 space-y-1">
+                            <li>Menyediakan jasa fotografi dan videografi untuk berbagai acara.</li>
+                            <li>Bertanggung jawab penuh dari konsultasi, eksekusi, hingga pasca-produksi.</li>
+                        </ul>
+                    </div>
+                    <!-- Experience Item 2 -->
+                    <div class="mb-10">
+                         <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-slate-500">2025</p>
+                        <h3 class="text-xl font-semibold text-indigo-700 mt-1">Instruktur Desain Grafis</h3>
+                        <p class="text-slate-600 font-medium">Pondok Pesantren Ngronggot</p>
+                         <ul class="list-disc list-inside mt-2 text-slate-600 space-y-1">
+                            <li>Merancang kurikulum dan mengajar dasar-dasar desain grafis (CorelDRAW).</li>
+                        </ul>
+                    </div>
+                    <!-- Experience Item 3 -->
+                    <div class="mb-10">
+                         <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-slate-500">2022 - 2024</p>
+                        <h3 class="text-xl font-semibold text-indigo-700 mt-1">Manajemen Konten & Asisten Pembina</h3>
+                        <p class="text-slate-600 font-medium">MAN 3 Nganjuk</p>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 space-y-1">
+                            <li>Mengelola konten visual Instagram dan menumbuhkan audiens hingga 13.000+ pengikut.</li>
+                            <li>Tim kreatif dan dokumentasi untuk event tahunan AKSI PRAGA & BSC.</li>
+                        </ul>
+                    </div>
+                     <!-- Experience Item 4 -->
+                    <div>
+                         <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-slate-500">2023 - 2024</p>
+                        <h3 class="text-xl font-semibold text-indigo-700 mt-1">Pelatih Ekstrakurikuler Pramuka</h3>
+                        <p class="text-slate-600 font-medium">SMPN 3 Ngronggot</p>
+                         <ul class="list-disc list-inside mt-2 text-slate-600 space-y-1">
+                            <li>Membina siswa dalam kegiatan kepramukaan, fokus pada pengembangan karakter.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Keahlian & Perangkat</h2>
+                <p class="text-slate-600 mt-2">Teknologi dan kemampuan yang saya kuasai.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="camera" class="text-indigo-600"></i>
+                        <h3 class="text-lg font-semibold">Fotografi & Videografi</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>Adobe Lightroom</li>
+                        <li>CapCut</li>
+                        <li>Komposisi & Pencahayaan</li>
+                        <li>Pengoperasian Kamera</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200">
+                     <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="pen-tool" class="text-indigo-600"></i>
+                        <h3 class="text-lg font-semibold">Desain Grafis</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>CorelDRAW</li>
+                        <li>Canva</li>
+                        <li>Pixellab</li>
+                        <li>Desain Media Sosial</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-slate-200">
+                     <div class="flex items-center space-x-3 mb-4">
+                        <i data-lucide="users" class="text-indigo-600"></i>
+                        <h3 class="text-lg font-semibold">Keahlian Non-Teknis</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>Komunikasi Visual</li>
+                        <li>Kerja Sama Tim</li>
+                        <li>Manajemen Proyek</li>
+                        <li>Public Speaking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Portofolio Unggulan</h2>
+                <p class="text-slate-600 mt-2">Beberapa karya pilihan yang saya banggakan.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <img src="images/pramuka.jpeg" alt="Proyek Media Sosial Pramuka" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Manajemen Medsos Pramuka</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Membangun identitas visual dan konten untuk Instagram @pramuka_man3nganjuk.</p>
+                        <a href="https://www.instagram.com/pramuka_man3nganjuk/?theme=dark" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800">Lihat di Instagram &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <img src="images/wisuda.jpeg" alt="Proyek Fotografi Wisuda" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fotografi Wisuda</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Mengabadikan momen kelulusan dengan fokus pada kebahagiaan dan kebanggaan.</p>
+                        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDQ3OTg2Mjg2MjQ5OTg1?story_media_id=3688202852658579126_5396982723&igsh=c3hqNWlmMnl3Zzdu" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800">Lihat Highlight &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <img src="images/video.jpeg" alt="Proyek Videografi Event" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Videografi Event</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Mendokumentasikan acara dalam format sinematik yang dinamis dan menarik.</p>
+                        <a href="https://drive.google.com/file/d/1iFcdkuxEBB5yPOeUyhzeh_xz2mgHVm2m/view?usp=drive_link" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800">Tonton Video &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="text-center max-w-3xl mx-auto">
+                 <h2 class="text-3xl font-bold">Mari Wujudkan Ide Anda Bersama.</h2>
+                <p class="text-slate-600 mt-4 leading-relaxed">
+                    Tertarik untuk berkolaborasi dalam sebuah proyek, mengabadikan momen spesial Anda, atau sekadar ingin berdiskusi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk peluang baru dan siap membantu Anda.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="mailto:ubay10803Q@gmail.com" class="flex items-center space-x-2 text-lg text-slate-700 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="mail"></i>
+                        <span>ubay10803Q@gmail.com</span>
+                    </a>
+                     <a href="https://wa.me/6281357709484" target="_blank" class="flex items-center space-x-2 text-lg text-slate-700 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="phone"></i>
+                        <span>0813-5770-9484</span>
+                    </a>
+                     <a href="https://www.instagram.com/mbahmu_palingoo/" target="_blank" class="flex items-center space-x-2 text-lg text-slate-700 hover:text-indigo-600 transition-colors">
+                        <i data-lucide="instagram"></i>
+                        <span>@mbahmu_palingoo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <p>&copy; 2024 Muhammad Ubaidillah Abrorul Munir. Dibuat dengan penuh semangat.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Add shadow to header on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
